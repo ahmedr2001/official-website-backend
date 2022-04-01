@@ -5,7 +5,7 @@ const socket = require("socket.io");
 const morgan = require("morgan");
 const app = express();
 
-// hours that the check the unverified users
+// Hours that the check the unverified users
 let hours = 6;
 setInterval(require("./methods/unverified"), 1000 * 60 * 60 * hours);
 
